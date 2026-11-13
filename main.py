@@ -9,6 +9,7 @@ def minNumberCoins(n: str) -> list[int]:
 
     c10 = n_int // 10
     c2 = (n_int - (c10 * 10)) // 2
+
     return [c10, c5, c2]
     
 
@@ -19,7 +20,7 @@ if __name__ == "__main__":
     # Проверка всех вариантов
     # for a in range(4, 100):
     #     result = minNumberCoins(str(a))
-    #     if a == (10 * result[0] + 5 * result[1] + 2 * result[2]):
-    #         print("Total = ", a, "result = ", result, "res = ", True)
-    #     else:
-    #         print("Total = ", a, "result = ", result, "res = ", False)
+    #     print(
+    #         f"Total = {a} result = {result} "
+    #         f"res = {a == 10 * result[0] + 5 * result[1] + 2 * result[2]}"
+    #     )
